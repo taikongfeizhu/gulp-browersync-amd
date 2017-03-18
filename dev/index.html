@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>demo page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+</head>
+<body>
+<div id="mainBox" class="displayNone">
+    <h1>Frontendseed Example</h1>
+
+    <div id="container">
+        <h4>Example Details</h4>
+        <p>
+            Template has been working for <span id="cost_time">0</span> seconds.
+        </p>
+
+        <h4>Project Describe</h4>
+        <p>
+            If you can see this page, this template is working successful.
+            If you checked out the source from GitHub make sure to run <code>gulp</code>.
+        </p>
+
+        <p>
+            It's need install Nodejs Requirejs, Gulp and so on.
+            <a href="http://www.github.com/facebook/react/">GitHub</a>.
+        </p>
+
+        <p>
+            This's page contain some javscript libs like jquery/zepto,underscore,mordernizr with bower.
+        </p>
+    </div>
+    <h4>Example Details</h4>
+
+    <p>
+        This is written in vanilla JavaScript and transformed in the browser.
+    </p>
+
+    <p>
+        Learn more about AMD & requirejs
+        <a href="https://github.com/jrburke/requirejs" target="_blank">jrburke's requirejs</a>.
+    </p>
+
+    <p>
+        Automate and enhance your workflow with
+        <a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md" target="_blank">gulp</a>.
+    </p>
+
+    <h4>Template Render</h4>
+    <p id="dateInfo"></p>
+
+</div>
+
+<!--removeIf(production)-->
+<script type="text/javascript" src="js/lib/require.js" data-main="js/app/home/home.js"></script>
+<!--endRemoveIf(production)-->
+
+<!-- include:js(js/app/home/home.js) -->
+</body>
+</html>
