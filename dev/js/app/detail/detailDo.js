@@ -5,26 +5,24 @@ define([
     "jquery",
     "underscore",
     "helper/util",
-    'text!text_path/demo.html',
-    'css!css_path/plugins',
     "domReady!"
 
-],function($, _, util, treeData, demoViewTemplate){
+],function($, _, util){
 
-    function HomeDo(){
+    function DetailDo(){
         this.mainBox = $("#mainBox");
         this.dateInfo = $("#dateInfo");
     };
 
-    HomeDo.prototype.render=function(){
+    DetailDo.prototype.render=function(){
         var t=this;
         t.mainBox.removeClass("displayNone");
-        this.dateInfo.text('Page get Ready !!!');    
+        this.dateInfo.text('Detail page ready !!!');
     }
 
-    HomeDo.prototype.init=function(){
+    DetailDo.prototype.init=function(){
         this.render();
     }
 
-    return new HomeDo();
+    return new DetailDo();
 });

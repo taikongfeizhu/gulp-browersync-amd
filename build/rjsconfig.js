@@ -7,6 +7,10 @@ module.exports = {
     {
       name: 'home/home',
       include: ["almond", "home/homeDo"]
+    },
+    {
+      name: 'detail/detail',
+      include: ["almond", "detail/detailDo"]
     }
   ],
   //optimize: "none",
